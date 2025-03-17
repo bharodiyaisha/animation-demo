@@ -32,3 +32,67 @@ body {
   height: 0px;
   background: transparent;
 }
+
+.image-section {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scrollbar-width: none; /* Hide scrollbar for better UI */
+}
+
+.image-section::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Webkit browsers */
+}
+
+.mockup {
+  position: relative;
+  width: 280px; /* Default for mobile */
+  height: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevents shrinking */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 640px) {
+  .mockup {
+    width: 320px; /* Larger screens */
+  }
+}
+
+.mockup .inner-content {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  font-weight: bold;
+}
+
+.mockup .text-section {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.mockup .temp {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.mockup .description {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.mockup .extra-info {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.mockup .extra-info div {
+  margin-bottom: 6px;
+}

@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-end items-center">
         <div className="space-x-6 hidden md:flex ">
           <Link
-            href="/bannerScroll"
+            href="/"
             className="text-white hover:text-indigo-200"
           >
             Banner
@@ -52,7 +52,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden flex flex-col space-y-4 mt-4 bg-indigo-700 p-4">
           <Link
-            href="/bannerScroll"
+            href="/"
             className="text-white hover:text-indigo-200"
           >
             Banner
